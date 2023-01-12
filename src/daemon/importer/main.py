@@ -39,12 +39,6 @@ def generate_unique_file_name(directory):
     return f"{directory}/{str(uuid.uuid4())}.xml"
 
 
-# def convert_csv_to_xml(in_path, out_path):
-#    converter = CSVtoXMLConverter(in_path)
-#    file = open(out_path, "w")
-#    file.write(converter.to_xml_str())
-
-
 class CSVHandler(FileSystemEventHandler):
     def __init__(self, input_path, output_path):
         self._output_path = output_path
@@ -91,6 +85,22 @@ class CSVHandler(FileSystemEventHandler):
             print("Erro na conexão à BD.")
 
         # !TODO: we should store the XML document into the imported_documents table
+        xmlFileName = (xml_path.split("output/", 1)[1])
+        try:
+            print("Connecting to DB to insert XML document on imported_documents.")
+            connection = psycopg2.connect(
+                host='db-xml2', database='is', user='is', password='is')
+            cursor = connection.cursor()
+            print("Connection successful.\nAtempting insertion.")
+            with open(xml_path, 'r', encoding="utf8") as file:
+                xml_string = file.read()
+
+            cursor.execute(
+                "INSERT INTO imported_documents(file_name, xml) VALUES(%s,%s)", (xmlFileName, xml_string))
+            connection.commit()
+            print("Dados inseridos com sucesso!")
+        except:
+            print("Erro na conexão à BD.")
 
     async def get_converted_files(self):
         # !TODO: you should retrieve from the database the files that were already converted before
