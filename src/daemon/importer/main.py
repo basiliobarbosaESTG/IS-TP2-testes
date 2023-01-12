@@ -8,7 +8,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler, FileCreatedEvent
 
 from utils.to_xml_converter import CSVtoXMLConverter
-from utils.converterXML import converterXML
+from utils.converterTeste import converterTeste
 
 
 def print_psycopg2_exception(ex):
@@ -70,11 +70,10 @@ class CSVHandler(FileSystemEventHandler):
         # we do the conversion
         # !TODO: once the conversion is done, we should updated the converted_documents tables
         # convert_csv_to_xml(csv_path, xml_path)
-        converterXML(csv_path, xml_path)
+        converterTeste(csv_path, xml_path)
         print(f"new xml file generated: '{xml_path}'")
         try:
             print("Connecting to DB to read and insert XML file.")
-            print("sai del suelo")  # ERRO
             connection = psycopg2.connect(
                 host='db-xml2', database='is', user='is', password='is')
             cursor = connection.cursor()
@@ -82,8 +81,10 @@ class CSVHandler(FileSystemEventHandler):
             with open(xml_path, 'r', encoding="utf8") as file:
                 xml_string = file.read()
 
+            print("teste1")
             cursor.execute("INSERT INTO converted_documents(src,file_size,dst) VALUES(%s,%s,%s)",
                            (csv_path, os.path.getsize(xml_path), xml_path))
+            print("teste2")
             connection.commit()
             print("Dados inseridos com sucesso!")
         except:
@@ -95,19 +96,17 @@ class CSVHandler(FileSystemEventHandler):
         # !TODO: you should retrieve from the database the files that were already converted before
         result = []
         try:
-            print("Connecting to DB to convert CSV into XML.")  # ERRO
-            print("TESTE.")
+            print("Connecting to DB to convert CSV into XML.")
             connection = psycopg2.connect(
                 host='db-xml2', database='is', user='is', password='is')
             # host='db-xml', database='is', user='is', password='is')
-            print("Erro")
             cursor = connection.cursor()
+            print("teste1 sai do sol")
             cursor.execute(
                 "SELECT src FROM converted_documents WHERE deleted = false")
-            # for row in cursor:
-            # result.append(row[0])
-            for self in cursor:
-                result.append(self[0])
+            print("teste2 sai do sol")
+            for row in cursor:
+                result.append(row[0])
 
         except:
             return ("Falhou no get converted files")
