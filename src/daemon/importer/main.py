@@ -8,10 +8,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler, FileCreatedEvent
 
 from utils.to_xml_converter import CSVtoXMLConverter
-from utils.converter import converter
 from utils.converterXML import converterXML
-from utils.athlete_events import athlete_events
-# from utils.apiTest import apiTest
 
 
 def print_psycopg2_exception(ex):
@@ -77,8 +74,9 @@ class CSVHandler(FileSystemEventHandler):
         print(f"new xml file generated: '{xml_path}'")
         try:
             print("Connecting to DB to read and insert XML file.")
+            print("sai del suelo")  # ERRO
             connection = psycopg2.connect(
-                host='db-xml', database='is', user='is', password='is')
+                host='db-xml2', database='is', user='is', password='is')
             cursor = connection.cursor()
             print("Connection successful.\nAtempting insertion.")
             with open(xml_path, 'r', encoding="utf8") as file:
@@ -100,17 +98,17 @@ class CSVHandler(FileSystemEventHandler):
             print("Connecting to DB to convert CSV into XML.")  # ERRO
             print("TESTE.")
             connection = psycopg2.connect(
-                host='db-xml', database='is', user='is', password='is')
-            print("SAI DO SOL.")
+                host='db-xml2', database='is', user='is', password='is')
+            # host='db-xml', database='is', user='is', password='is')
+            print("Erro")
             cursor = connection.cursor()
-            print("SAI DO SOL2.")
             cursor.execute(
                 "SELECT src FROM converted_documents WHERE deleted = false")
-            print("SAI DO SOL3.")
-            for row in cursor:
-                print("SAI DO SOL4.")
-                result.append(row[0])
-                print("SAI DO SOL5.")
+            # for row in cursor:
+            # result.append(row[0])
+            for self in cursor:
+                result.append(self[0])
+
         except:
             return ("Falhou no get converted files")
         finally:
