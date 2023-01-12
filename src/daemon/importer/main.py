@@ -9,6 +9,9 @@ from watchdog.events import FileSystemEventHandler, FileCreatedEvent
 
 from utils.to_xml_converter import CSVtoXMLConverter
 from utils.converter import converter
+from utils.converterXML import converterXML
+from utils.athlete_events import athlete_events
+# from utils.apiTest import apiTest
 
 
 def print_psycopg2_exception(ex):
@@ -69,10 +72,11 @@ class CSVHandler(FileSystemEventHandler):
 
         # we do the conversion
         # !TODO: once the conversion is done, we should updated the converted_documents tables
-        convert_csv_to_xml(csv_path, xml_path)
+        # convert_csv_to_xml(csv_path, xml_path)
+        converterXML(csv_path, xml_path)
         print(f"new xml file generated: '{xml_path}'")
         try:
-            print("Connecting to DB to read XML file.")
+            print("Connecting to DB to read and insert XML file.")
             connection = psycopg2.connect(
                 host='db-xml', database='is', user='is', password='is')
             cursor = connection.cursor()
@@ -93,14 +97,20 @@ class CSVHandler(FileSystemEventHandler):
         # !TODO: you should retrieve from the database the files that were already converted before
         result = []
         try:
-            print("Connecting to DB to convert CSV into XML.")
+            print("Connecting to DB to convert CSV into XML.")  # ERRO
+            print("TESTE.")
             connection = psycopg2.connect(
                 host='db-xml', database='is', user='is', password='is')
+            print("SAI DO SOL.")
             cursor = connection.cursor()
+            print("SAI DO SOL2.")
             cursor.execute(
                 "SELECT src FROM converted_documents WHERE deleted = false")
+            print("SAI DO SOL3.")
             for row in cursor:
+                print("SAI DO SOL4.")
                 result.append(row[0])
+                print("SAI DO SOL5.")
         except:
             return ("Falhou no get converted files")
         finally:
