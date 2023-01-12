@@ -71,12 +71,40 @@ class CSVHandler(FileSystemEventHandler):
         # !TODO: once the conversion is done, we should updated the converted_documents tables
         convert_csv_to_xml(csv_path, xml_path)
         print(f"new xml file generated: '{xml_path}'")
+        try:
+            print("Connecting to DB to read XML file.")
+            connection = psycopg2.connect(
+                host='db-xml', database='is', user='is', password='is')
+            cursor = connection.cursor()
+            print("Connection successful.\nAtempting insertion.")
+            with open(xml_path, 'r', encoding="utf8") as file:
+                xml_string = file.read()
+
+            cursor.execute("INSERT INTO converted_documents(src,file_size,dst) VALUES(%s,%s,%s)",
+                           (csv_path, os.path.getsize(xml_path), xml_path))
+            connection.commit()
+            print("Dados inseridos com sucesso!")
+        except:
+            print("Erro na conexão à BD.")
 
         # !TODO: we should store the XML document into the imported_documents table
 
     async def get_converted_files(self):
         # !TODO: you should retrieve from the database the files that were already converted before
-        return []
+        result = []
+        try:
+            print("Connecting to DB to convert CSV into XML.")
+            connection = psycopg2.connect(
+                host='db-xml', database='is', user='is', password='is')
+            cursor = connection.cursor()
+            cursor.execute(
+                "SELECT src FROM converted_documents WHERE deleted = false")
+            for row in cursor:
+                result.append(row[0])
+        except:
+            return ("Falhou no get converted files")
+        finally:
+            return [result]
 
     def on_created(self, event):
         if not event.is_directory and event.src_path.endswith(".csv"):
