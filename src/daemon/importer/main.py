@@ -8,7 +8,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler, FileCreatedEvent
 
 from utils.to_xml_converter import CSVtoXMLConverter
-from utils.converterTeste import converterTeste
+from utils.convertXML import convertXML
 
 
 def print_psycopg2_exception(ex):
@@ -39,10 +39,10 @@ def generate_unique_file_name(directory):
     return f"{directory}/{str(uuid.uuid4())}.xml"
 
 
-def convert_csv_to_xml(in_path, out_path):
-    converter = CSVtoXMLConverter(in_path)
-    file = open(out_path, "w")
-    file.write(converter.to_xml_str())
+# def convert_csv_to_xml(in_path, out_path):
+#    converter = CSVtoXMLConverter(in_path)
+#    file = open(out_path, "w")
+#    file.write(converter.to_xml_str())
 
 
 class CSVHandler(FileSystemEventHandler):
@@ -70,7 +70,7 @@ class CSVHandler(FileSystemEventHandler):
         # we do the conversion
         # !TODO: once the conversion is done, we should updated the converted_documents tables
         # convert_csv_to_xml(csv_path, xml_path)
-        converterTeste(csv_path, xml_path)
+        convertXML(csv_path, xml_path)
         print(f"new xml file generated: '{xml_path}'")
         try:
             print("Connecting to DB to read and insert XML file.")

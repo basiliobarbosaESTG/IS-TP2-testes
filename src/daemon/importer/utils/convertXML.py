@@ -1,7 +1,7 @@
 import csv
 
 
-def converterTeste(file_to_open, file_name):
+def convertXML(file_to_open, file_name):
     f = open(file_to_open)
 
     csv_f = csv.reader(f)
