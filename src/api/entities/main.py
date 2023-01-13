@@ -31,10 +31,9 @@ app.config["DEBUG"] = True
 
 @app.route('/api/event/', methods=['GET'])
 def get_events():
-    # rel_cursor = connect_db_rel()
-    # rel_cursor.execute("SELECT id, event FROM event")
-    # return [Event(row[1]).to_json() for row in rel_cursor]
-    return events
+    rel_cursor = connect_db_rel()
+    rel_cursor.execute("SELECT id, event FROM event")
+    return [Event(row[1]).to_json() for row in rel_cursor]
 
 
 @app.route('/api/event/create', methods=['POST'])
