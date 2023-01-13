@@ -1,2 +1,12 @@
-1 season associada a varios events
+1 event associado a N atletas
+
+
+
+
+
+
+
+
+
+1 season - N events
 sport associado a team

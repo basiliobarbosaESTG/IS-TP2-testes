@@ -3,7 +3,7 @@ import psycopg2
 
 from flask import Flask, jsonify, request
 from entities.event import Event
-from entities.season import Season
+from entities.atlethe import Atlethe
 from entities import Team
 
 PORT = int(sys.argv[1]) if len(sys.argv) >= 2 else 9000
@@ -12,9 +12,9 @@ PORT = int(sys.argv[1]) if len(sys.argv) >= 2 else 9000
 # !TODO: replace by database access
 # events = [
 # ]
-seasons = [
+events = [
     {
-        "season": "summer"
+        "event": "basketball"
     }
 ]
 
@@ -29,48 +29,48 @@ app = Flask(__name__)
 app.config["DEBUG"] = True
 
 
-@app.route('/api/season/', methods=['GET'])
-def get_seasons():
-    # rel_cursor = connect_db_rel()
-    # rel_cursor.execute("SELECT id, season FROM season")
-    # return [Season(row[1]).to_json() for row in rel_cursor]
-    return seasons
-
-
-@app.route('/api/season/create', methods=['POST'])
-def post_seasons():
-    data = request.get_json()
-    season_name = str(data.get('season'))
-    rel_cursor = connect_db_rel()
-    rel_cursor.cursor()
-    try:
-        rel_cursor.execute(
-            "INSERT INTO season (season) VALUES(%s)", (season_name,))
-        connect_db_rel().commit()
-        return jsonify({'status': 'success', 'your_data': season_name}), 201
-    except:
-        pass
-
-
 @app.route('/api/event/', methods=['GET'])
 def get_events():
-    rel_cursor = connect_db_rel()
-    rel_cursor.execute(
-        "SELECT name, sex, age, height, weight, team, noc, games, year, season, city, lat, lon, sport, event, medal, geom, id FROM event")
-    return [Event(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15], row[16], row[17]).to_json() for row in rel_cursor]
+    # rel_cursor = connect_db_rel()
+    # rel_cursor.execute("SELECT id, event FROM event")
+    # return [Event(row[1]).to_json() for row in rel_cursor]
+    return events
 
 
 @app.route('/api/event/create', methods=['POST'])
 def post_events():
-    event = request.get_json()
+    data = request.get_json()
+    event_name = str(data.get('event'))
+    rel_cursor = connect_db_rel()
+    rel_cursor.cursor()
+    try:
+        rel_cursor.execute(
+            "INSERT INTO event (event) VALUES(%s)", (event_name,))
+        connect_db_rel().commit()
+        return jsonify({'status': 'success', 'your_data': event_name}), 201
+    except:
+        pass
+
+
+@app.route('/api/atlethe/', methods=['GET'])
+def get_atlethes():
+    rel_cursor = connect_db_rel()
+    rel_cursor.execute(
+        "SELECT name, sex, age, height, weight, team, noc, games, year, season, city, lat, lon, sport, event, medal, geom, id FROM event")
+    return [Atlethe(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15], row[16], row[17]).to_json() for row in rel_cursor]
+
+
+@app.route('/api/atlethe/create', methods=['POST'])
+def post_atlethes():
+    atlethe = request.get_json()
     rel_cursor = connect_db_rel()
     rel_cursor.cursor()
     # meter point direito, tirar plicas
-    lat = float(event.get("lat", None).replace("'", ""))
-    lon = float(event.get("lon", None).replace("'", ""))
+    lat = float(atlethe.get("lat", None).replace("'", ""))
+    lon = float(atlethe.get("lon", None).replace("'", ""))
     try:
-        rel_cursor.execute("""INSERT INTO event(name, sex, age, height, weight, team, noc, games, year, season, city, lat, lon, sport, event, medal, geom,) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, ST_GeomFromText('POINT(%s %s)',4326))""",
-                           (event.get("name"), event.get("sex"), event.get("age"), event.get("height"), event.get("weight"), event.get("team"), event.get("noc"), event.get("games"), event.get("year"), event.get("season"), event.get("city"), event.get("lat"), event.get("lon"), event.get("sport"), event.get("event"), event.get("medal"), lat, lon))
+        rel_cursor.execute("""INSERT INTO atlethe(name, sex, age, height, weight, team, noc, games, year, season, city, lat, lon, sport, event, medal, geom,) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, ST_GeomFromText('POINT(%s %s)',4326))""",
+                           (atlethe.get("name"), atlethe.get("sex"), atlethe.get("age"), atlethe.get("height"), atlethe.get("weight"), atlethe.get("team"), atlethe.get("noc"), atlethe.get("games"), atlethe.get("year"), atlethe.get("season"), atlethe.get("city"), atlethe.get("lat"), atlethe.get("lon"), atlethe.get("sport"), atlethe.get("event"), atlethe.get("medal"), lat, lon))
         connect_db_rel().commit()
         return jsonify(message='Restaurant created successfully'), 201
     except Exception as e:

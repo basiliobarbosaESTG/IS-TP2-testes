@@ -3,6 +3,7 @@ import time
 
 import psycopg2
 from psycopg2 import OperationalError
+import requests
 
 POLLING_FREQ = int(sys.argv[1]) if len(sys.argv) >= 2 else 60
 
@@ -53,22 +54,23 @@ if __name__ == "__main__":
         print("Checking updates...")
         # !TODO: 1- Execute a SELECT query to check for any changes on the table
         resp = requests.get(
-            url="http://api-entities:8080/api/provinces", params={})
-        provinces = {x.get("province"): x.get("id") for x in resp.json()}
-        query = """(with restaurants as (select unnest(xpath('//restaurant',xml)) as restaurants_in_city from imported_documents WHERE deleted='False')
-                            select DISTINCT(xpath('//restaurant/location/province/text()',restaurants_in_city))[1]::text as Province
-                            FROM restaurants
-                            GROUP BY Province)"""
+            url="http://api-entities:8080/api/season", params={})
+        # supostamente vai buscar os dados da tag season e o respetivo id
+        seasons = {x.get("season"): x.get("id") for x in resp.json()}
+        query = """(with events as (select unnest(xpath('//event',xml)) as events from imported_documents WHERE deleted='False')
+                            select DISTINCT(xpath('//event/location/season/text()',restaurants_in_city))[1]::text as Season
+                            FROM events
+                            GROUP BY Season)"""
         xml_cursor.execute(query)
         for row in xml_cursor:
-            if row[0] not in provinces.keys():
+            if row[0] not in seasons.keys():
                 x = row[0]
                 resp = requests.post(
-                    url="http://api-entities:8080/api/provinces/create", json={"province": x})
+                    url="http://api-entities:8080/api/season/create", json={"season": x})
                 resp = requests.get(
-                    url="http://api-entities:8080/api/provinces", params={})
-                provinces = {x.get("province"): x.get("id")
-                             for x in resp.json()}
+                    url="http://api-entities:8080/api/seasons", params={})
+                seasons = {x.get("season"): x.get("id")
+                           for x in resp.json()}
 
         respRest = requests.get(
             url="http://api-entities:8080/api/restaurants", params={})
@@ -80,7 +82,7 @@ if __name__ == "__main__":
 							(xpath('//city/text()',restaurants_with_name))[1]::text as city,
 							(xpath('//country/text()',restaurants_with_name))[1]::text as country,
 							(xpath('//postalCode/text()',restaurants_with_name))[1]::text as postalCode,
-							(xpath('//province/text()',restaurants_with_name))[1]::text as province,
+							(xpath('//season/text()',restaurants_with_name))[1]::text as season,
 							(xpath('//latitude/text()',restaurants_with_name))[1]::text as latitude,
 							(xpath('//longitude/text()',restaurants_with_name))[1]::text as longitude,
 							(xpath('//websites/text()',restaurants_with_name))[1]::text as websites
@@ -94,7 +96,7 @@ if __name__ == "__main__":
                     "name": row[1],
                     "address": row[2],
                     "city": row[3],
-                    "province": provinces.get(row[6]),
+                    "season": seasons.get(row[6]),
                     "latitude": row[7],
                     "longitude": row[8],
                     "websites": row[9],
