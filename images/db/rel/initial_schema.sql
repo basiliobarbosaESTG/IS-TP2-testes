@@ -2,6 +2,7 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE EXTENSION IF NOT EXISTS POSTGIS;
 CREATE EXTENSION IF NOT EXISTS POSTGIS_TOPOLOGY;
 
+/*
 CREATE TABLE public.teams (
 	id              uuid PRIMARY KEY DEFAULT uuid_generate_v4(),
 	name            VARCHAR(250) NOT NULL,
@@ -36,16 +37,17 @@ ALTER TABLE players
     ADD CONSTRAINT players_teams_id_fk
         FOREIGN KEY (team_id) REFERENCES teams
             ON DELETE SET NULL;
+*/
 
 
-CREATE TABLE public.seasons (
+CREATE TABLE public.event (
 	id              uuid PRIMARY KEY DEFAULT uuid_generate_v4(),
-	season          VARCHAR(250) NOT NULL,
+	event          VARCHAR(250) NOT NULL,
 	created_on      TIMESTAMP NOT NULL DEFAULT NOW(),
 	updated_on      TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
-CREATE TABLE public.events (
+CREATE TABLE public.atlethe (
 	id              uuid PRIMARY KEY DEFAULT uuid_generate_v4(),
 	name            VARCHAR(250) NOT NULL,
 	sex             VARCHAR(250) NOT NULL,
@@ -64,12 +66,12 @@ CREATE TABLE public.events (
 	event           VARCHAR(250) NOT NULL,
 	medal           VARCHAR(250) NOT NULL,
 	geom            GEOMETRY,
-	season_id 		uuid,
+	event_id 		uuid,
 	created_on      TIMESTAMP NOT NULL DEFAULT NOW(),
 	updated_on      TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
-ALTER TABLE events
-    ADD CONSTRAINT events_seasons_id_fk
-        FOREIGN KEY (season_id) REFERENCES seasons
+ALTER TABLE atlethe
+    ADD CONSTRAINT atlethe_event_id_fk
+        FOREIGN KEY (event_id) REFERENCES event
             ON DELETE SET NULL;
