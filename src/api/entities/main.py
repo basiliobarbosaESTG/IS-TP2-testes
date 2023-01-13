@@ -1,32 +1,91 @@
 import sys
+import psycopg2
 
 from flask import Flask, jsonify, request
-
+from entities.event import Event
+from entities.season import Season
 from entities import Team
 
 PORT = int(sys.argv[1]) if len(sys.argv) >= 2 else 9000
 
 # set of all teams
 # !TODO: replace by database access
-teams = [
+# events = [
+# ]
+seasons = [
+    {
+        "season": "summer"
+    }
 ]
+
+
+def connect_db_rel():
+    db_access = psycopg2.connect(
+        host='db-rel2', database='is', user='is', password='is')
+    return db_access.cursor()
+
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
 
 
-@app.route('/api/teams/', methods=['GET'])
-def get_teams():
-    return jsonify([team.__dict__ for team in teams])
+@app.route('/api/season/', methods=['GET'])
+def get_seasons():
+    # rel_cursor = connect_db_rel()
+    # rel_cursor.execute("SELECT id, season FROM season")
+    # return [Season(row[1]).to_json() for row in rel_cursor]
+    return seasons
 
 
-@app.route('/api/teams/', methods=['POST'])
-def create_team():
+@app.route('/api/season/create', methods=['POST'])
+def post_seasons():
     data = request.get_json()
-    team = Team(name=data['name'])
-    teams.append(team)
-    return jsonify(team.__dict__), 201
+    season_name = str(data.get('season'))
+    rel_cursor = connect_db_rel()
+    rel_cursor.cursor()
+    try:
+        rel_cursor.execute(
+            "INSERT INTO season (season) VALUES(%s)", (season_name,))
+        connect_db_rel().commit()
+        return jsonify({'status': 'success', 'your_data': season_name}), 201
+    except:
+        pass
 
+
+@app.route('/api/event/', methods=['GET'])
+def get_events():
+    rel_cursor = connect_db_rel()
+    rel_cursor.execute(
+        "SELECT name, sex, age, height, weight, team, noc, games, year, season, city, lat, lon, sport, event, medal, geom, id FROM event")
+    return [Event(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15], row[16], row[17]).to_json() for row in rel_cursor]
+
+
+@app.route('/api/event/create', methods=['POST'])
+def post_events():
+    event = request.get_json()
+    rel_cursor = connect_db_rel()
+    rel_cursor.cursor()
+    # meter point direito, tirar plicas
+    lat = float(event.get("lat", None).replace("'", ""))
+    lon = float(event.get("lon", None).replace("'", ""))
+    try:
+        rel_cursor.execute("""INSERT INTO event(name, sex, age, height, weight, team, noc, games, year, season, city, lat, lon, sport, event, medal, geom,) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, ST_GeomFromText('POINT(%s %s)',4326))""",
+                           (event.get("name"), event.get("sex"), event.get("age"), event.get("height"), event.get("weight"), event.get("team"), event.get("noc"), event.get("games"), event.get("year"), event.get("season"), event.get("city"), event.get("lat"), event.get("lon"), event.get("sport"), event.get("event"), event.get("medal"), lat, lon))
+        connect_db_rel().commit()
+        return jsonify(message='Restaurant created successfully'), 201
+    except Exception as e:
+        return jsonify(error=str(e)), 400
+
+
+# @app.route('/api/teams/', methods=['GET'])
+# def get_teams():
+#    return jsonify([team.__dict__ for team in teams])
+# @app.route('/api/teams/', methods=['POST'])
+# def create_team():
+#    data = request.get_json()
+#    team = Team(name=data['name'])
+#    teams.append(team)
+#    return jsonify(team.__dict__), 201
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=PORT)

@@ -10,6 +10,8 @@ from watchdog.events import FileSystemEventHandler, FileCreatedEvent
 from utils.to_xml_converter import CSVtoXMLConverter
 from utils.convertXML import convertXML
 
+# NAO FAZ FALTA EM PRINCIPIO
+
 
 def print_psycopg2_exception(ex):
     # get details about the exception
