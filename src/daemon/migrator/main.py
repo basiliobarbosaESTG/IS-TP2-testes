@@ -28,7 +28,6 @@ def print_psycopg2_exception(ex):
 
 
 if __name__ == "__main__":
-
     db_org = psycopg2.connect(
         host='db-xml2', database='is', user='is', password='is')
     db_dst = psycopg2.connect(
@@ -51,59 +50,74 @@ if __name__ == "__main__":
         if db_dst is None or db_org is None:
             continue
 
+        xml_cursor = db_org.cursor()
         print("Checking updates...")
         # !TODO: 1- Execute a SELECT query to check for any changes on the table
         resp = requests.get(
-            url="http://api-entities:8080/api/season", params={})
+            url="http://api-entities2:8080/api/event", params={})
         # supostamente vai buscar os dados da tag season e o respetivo id
-        seasons = {x.get("season"): x.get("id") for x in resp.json()}
-        query = """(with events as (select unnest(xpath('//event',xml)) as events from imported_documents WHERE deleted='False')
-                            select DISTINCT(xpath('//event/location/season/text()',restaurants_in_city))[1]::text as Season
-                            FROM events
-                            GROUP BY Season)"""
+        events = {x.get("event"): x.get("id")
+                  for x in resp.json()}
+        query = """(with atlethes as (select unnest(xpath('//atlethe',xml)) as atlethes from imported_documents)
+                            select DISTINCT(xpath('//atlethe/competition/statsBySport/event/text()',atlethes))[1]::text as Event
+                            FROM atlethes
+                            GROUP BY Event)"""
         xml_cursor.execute(query)
         for row in xml_cursor:
-            if row[0] not in seasons.keys():
+            if row[0] not in events.keys():
                 x = row[0]
                 resp = requests.post(
-                    url="http://api-entities:8080/api/season/create", json={"season": x})
+                    url="http://api-entities2:8080/api/events/create", json={"event": x})
                 resp = requests.get(
-                    url="http://api-entities:8080/api/seasons", params={})
-                seasons = {x.get("season"): x.get("id")
-                           for x in resp.json()}
+                    url="http://api-entities2:8080/api/events", params={})
+                events = {x.get("event"): x.get("id") for x in resp.json()}
 
-        respRest = requests.get(
-            url="http://api-entities:8080/api/restaurants", params={})
-        restaurants = {x.get("restid") for x in respRest.json()}
-        query2 = """ with restaurants as (select unnest(xpath('//restaurant/name/..',xml)) as restaurants_with_name from imported_documents WHERE deleted='False')
-                            select(xpath('//restaurant/@index',restaurants_with_name))[1]::text as restid,
-							(xpath('//restaurant/name/text()',restaurants_with_name))[1]::text as name,
-							(xpath('//address/text()',restaurants_with_name))[1]::text as address,
-							(xpath('//city/text()',restaurants_with_name))[1]::text as city,
-							(xpath('//country/text()',restaurants_with_name))[1]::text as country,
-							(xpath('//postalCode/text()',restaurants_with_name))[1]::text as postalCode,
-							(xpath('//season/text()',restaurants_with_name))[1]::text as season,
-							(xpath('//latitude/text()',restaurants_with_name))[1]::text as latitude,
-							(xpath('//longitude/text()',restaurants_with_name))[1]::text as longitude,
-							(xpath('//websites/text()',restaurants_with_name))[1]::text as websites
-                            FROM restaurants;"""
-        xml_cursor.execute(query2)
-        for row in xml_cursor:
-            if row[0] not in restaurants:
-                x = row[0]
-                data = {
-                    "restid": row[0],
-                    "name": row[1],
-                    "address": row[2],
-                    "city": row[3],
-                    "season": seasons.get(row[6]),
-                    "latitude": row[7],
-                    "longitude": row[8],
-                    "websites": row[9],
-                }
-                url = "http://api-entities:8080/api/restaurants/create"
-                headers = {"Content-Type": "application/json"}
-                response = requests.post(url, headers=headers, json=data)
+        # respRest = requests.get(
+        #    url="http://api-entities:8080/api/atlethes", params={})
+        # atlethes = {x.get("id") for x in respRest.json()}
+        # query2 = """ with atlethes as (select unnest(xpath('//atlethe/sex/..',xml)) as atlethes_with_sex from imported_documents)
+        #                    select(xpath('//atlethe/@name',atlethes_with_sex))[1]::text as name,
+                # (xpath('//atlethe/sex/text()',atlethes_with_sex))[1]::text as sex,
+        #                    (xpath('//atlethe/age/text()',atlethes_with_sex))[1]::text as age,
+        #                    (xpath('//atlethe/height/text()',atlethes_with_sex))[1]::text as height,
+        #                    (xpath('//atlethe/weight/text()',atlethes_with_sex))[1]::text as weight,
+        #                    (xpath('//atlethe/country/team/text()',atlethes_with_sex))[1]::text as team,
+        #                    (xpath('//atlethe/country/noc/text()',atlethes_with_sex))[1]::text as noc,
+         #                   (xpath('//atlethe/competition/games/text()',atlethes_with_sex))[1]::text as games,
+          #                  (xpath('//atlethe/competition/year/text()',atlethes_with_sex))[1]::text as year,
+           #                 (xpath('//atlethe/competition/season/text()',atlethes_with_sex))[1]::text as season,
+            #                (xpath('//atlethe/competition/city/text()',atlethes_with_sex))[1]::text as city,
+             #               (xpath('//atlethe/competition/coordenates/lat/text()',atlethes_with_sex))[1]::text as lat,
+              #              (xpath('//atlethe/competition/coordenates/lon/text()',atlethes_with_sex))[1]::text as lon,
+               #             (xpath('//atlethe/competition/statsBySport/sport/text()',atlethes_with_sex))[1]::text as sport,
+                #            (xpath('//atlethe/competition/statsBySport/event/text()',atlethes_with_sex))[1]::text as event,
+                #           (xpath('//atlethe/competition/statsBySport/medal/text()',atlethes_with_sex))[1]::text as medal
+                #          FROM atlethes;"""
+        # xml_cursor.execute(query2)
+        # for row in xml_cursor:  # nome das colunas do xml
+        #    if row[0] not in atlethes:
+        #        x = row[0]
+        #        data = {
+        #            "name": row[0],
+        #            "sex": row[1],
+        #            "age": row[2],
+        #            "height": row[3],
+        #            "weight": row[4],
+        #            "team": row[5],
+        #            "noc": row[6],
+        #            "games": row[7],
+        #            "year": row[8],
+         #           "season": row[9],
+         #           "city": row[10],
+            #        "lat": row[11],
+           #         "lon": row[12],
+          #          "sport": row[13],
+         #           "event": events.get(row[14]),
+         #           "medal": row[15]
+         #       }
+         #       url = "http://api-entities:8080/api/restaurants/create"
+         #       headers = {"Content-Type": "application/json"}
+         #       response = requests.post(url, headers=headers, json=data)
         # !TODO: 2- Execute a SELECT queries with xpath to retrieve the data we want to store in the relational db
         # !TODO: 3- Execute INSERT queries in the destination db
         # !TODO: 4- Make sure we store somehow in the origin database that certain records were already migrated.
