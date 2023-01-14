@@ -44,22 +44,6 @@ def post_seasons():
     except:
         pass
 
-    # data = request.get_json()
-    # season = str(data.get('season'))
-    # db_acess_rel_cursor = psycopg2.connect(
-    #    host='db-rel2', database='is', user='is', password='is')
-    # rel_cursor = db_acess_rel_cursor.cursor()
-    # try:
-    #    rel_cursor.execute(
-    #        "INSERT INTO season (season) VALUES(%s)", (season,))
-    #    rel_cursor.commit()  # db_acess_rel_cursor???????
-    #    return jsonify({'status': 'success', 'your_data': season}), 201
-    # except Exception as e:
-    #    return jsonify({'status': 'error', 'message': str(e)})
-    # finally:
-    #    rel_cursor.close()
-    #    db_acess_rel_cursor.close()
-
 
 @app.route('/api/atlethe/', methods=['GET'])
 def get_atlethes():
