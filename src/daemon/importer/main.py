@@ -10,27 +10,6 @@ from watchdog.events import FileSystemEventHandler, FileCreatedEvent
 from utils.to_xml_converter import CSVtoXMLConverter
 from utils.convertXML import convertXML
 
-# NAO FAZ FALTA EM PRINCIPIO
-
-
-def print_psycopg2_exception(ex):
-    # get details about the exception
-    err_type, err_obj, traceback = sys.exc_info()
-
-    # get the line number when exception occured
-    line_num = traceback.tb_lineno
-
-    # print the connect() error
-    print("\npsycopg2 ERROR:", ex, "on line number:", line_num)
-    print("psycopg2 traceback:", traceback, "-- type:", err_type)
-
-    # psycopg2 extensions.Diagnostics object attribute
-    print("\nextensions.Diagnostics:", ex.diag)
-
-    # print the pgcode and pgerror exceptions
-    print("pgerror:", ex.pgerror)
-    print("pgcode:", ex.pgcode, "\n")
-
 
 def get_csv_files_in_input_folder():
     return [os.path.join(dp, f) for dp, dn, filenames in os.walk(CSV_INPUT_PATH) for f in filenames if
@@ -77,10 +56,8 @@ class CSVHandler(FileSystemEventHandler):
             with open(xml_path, 'r', encoding="utf8") as file:
                 xml_string = file.read()
 
-            print("teste1")
             cursor.execute("INSERT INTO converted_documents(src,file_size,dst) VALUES(%s,%s,%s)",
                            (csv_path, os.path.getsize(xml_path), xml_path))
-            print("teste2")
             connection.commit()
             print("Dados inseridos com sucesso!")
         except:
@@ -111,12 +88,9 @@ class CSVHandler(FileSystemEventHandler):
             print("Connecting to DB to convert CSV into XML.")
             connection = psycopg2.connect(
                 host='db-xml2', database='is', user='is', password='is')
-            # host='db-xml', database='is', user='is', password='is')
             cursor = connection.cursor()
-            print("teste1 sai do sol")
             cursor.execute(
                 "SELECT src FROM converted_documents WHERE deleted = false")
-            print("teste2 sai do sol")
             for row in cursor:
                 result.append(row[0])
 

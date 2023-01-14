@@ -40,9 +40,9 @@ ALTER TABLE players
 */
 
 
-CREATE TABLE public.event (
+CREATE TABLE public.season (
 	id              uuid PRIMARY KEY DEFAULT uuid_generate_v4(),
-	event          VARCHAR(250) NOT NULL,
+	season          VARCHAR(250) NOT NULL,
 	created_on      TIMESTAMP NOT NULL DEFAULT NOW(),
 	updated_on      TIMESTAMP NOT NULL DEFAULT NOW()
 );
@@ -66,12 +66,12 @@ CREATE TABLE public.atlethe (
 	event           VARCHAR(250) NOT NULL,
 	medal           VARCHAR(250) NOT NULL,
 	geom            GEOMETRY,
-	event_id 		uuid,
+	season_id 		uuid,
 	created_on      TIMESTAMP NOT NULL DEFAULT NOW(),
 	updated_on      TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
 ALTER TABLE atlethe
-    ADD CONSTRAINT atlethe_event_id_fk
-        FOREIGN KEY (event_id) REFERENCES event
+    ADD CONSTRAINT atlethe_season_id_fk
+        FOREIGN KEY (season_id) REFERENCES event
             ON DELETE SET NULL;

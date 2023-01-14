@@ -55,35 +55,24 @@ if __name__ == "__main__":
         # !TODO: 1- Execute a SELECT query to check for any changes on the table
         resp = requests.get(
             url="http://api-entities2:8080/api/season", params={})
-        # supostamente vai buscar os dados da tag season e o respetivo id
-        seasons = {x.get("season")  # : x.get("id")
-                   for x in resp.json()}
+        # vai buscar os dados da tag season
+        seasons = {x.get("season"): x.get("id") for x in resp.json()}
         query = """(with atlethes as (select unnest(xpath('//atlethe',xml)) as atlethes from imported_documents)
                             select DISTINCT(xpath('//atlethe/competition/season/text()',atlethes))[1]::text as Season
                             FROM atlethes
                             GROUP BY Season)"""
         xml_cursor.execute(query)
 
-        print(seasons)
         for row in xml_cursor:
-            # row[0].replace(" ", "")
-            print(row[0])
-            print(row[0].split())
-
-            # mykeys = events.keys()
-            # type(mykeys)
-            # mylist = list(mykeys)
-            # print(mylist)
-            if row[0] not in seasons.keys():
+            if row[0] not in seasons.keys():  #
                 x = row[0]
-                # print(x)
-                print(x.split())
+                print(x)
+
                 resp = requests.post(
-                    url="http://api-entities2:8080/api/seasons/create", json={"season": x})
+                    url="http://api-entities2:8080/api/season/create", json={"season": x})
                 resp = requests.get(
-                    url="http://api-entities2:8080/api/seasons", params={})
-                seasons = {x.get("season")
-                           for x in resp.json()}  # : x.get("id")
+                    url="http://api-entities2:8080/api/season", params={})
+                seasons = {x.get("season"): x.get("id")for x in resp.json()}  #
 
         # respRest = requests.get(
         #    url="http://api-entities2:8080/api/atlethes", params={})
@@ -140,32 +129,3 @@ if __name__ == "__main__":
         db_dst.close()
 
         time.sleep(POLLING_FREQ)
-
-# TESTES
-
-# d1[1, row[0]]
-        # print(d1)
-
-        # a_dict = {}
-        # a_dict[row[0]] = 'example value'
-        # print(a_dict)  # 👉️ {(7, 49): 'example value'}
-        # print(a_dict[row[0]])
-
-        # print("Index with a tuple")
-        # d1[(1, "a")] = "tuple"
-        # print("New dictionary contents")
-        # print("Key", ' : ', "Value")
-        # for x in d1.keys():
-        #    print x, ' : ', d1[x]
-        # ""  # Print blank line
-        # print(row[0].get())
-
-
-# TESTES 2
-        # old_dict = ''
-        # new_dict = {value: key for (
-        #    key, value) in old_dict.split}  # .items()
-        # print(new_dict)
-
-# SOLUCAO EVENT TROCA PARA SEASON
-# NAO CONSEGUIMOS CORRIGIR O ERRO DOS ESPAÇOS DAS KEYS

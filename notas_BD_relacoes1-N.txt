@@ -1,6 +1,6 @@
 1 event associado a N atletas
 
-
+1 season - n atletas
 
 
 

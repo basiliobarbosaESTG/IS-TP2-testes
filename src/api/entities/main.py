@@ -10,11 +10,6 @@ PORT = int(sys.argv[1]) if len(sys.argv) >= 2 else 9000
 
 # set of all teams
 # !TODO: replace by database access
-seasons = [
-    {
-        "season": "Winter"
-    }
-]
 
 
 def connect_db_rel():
@@ -29,25 +24,41 @@ app.config["DEBUG"] = True
 
 @app.route('/api/season/', methods=['GET'])
 def get_seasons():
-    # rel_cursor = connect_db_rel()
-    # rel_cursor.execute("SELECT id, season FROM season")
-    # return [Season(row[1]).to_json() for row in rel_cursor]
-    return seasons
+    rel_cursor = connect_db_rel()
+    rel_cursor.execute("SELECT id, season FROM season")
+    return [Season(row[1]).to_json() for row in rel_cursor]
+    # return seasons
 
 
 @app.route('/api/season/create', methods=['POST'])
 def post_seasons():
     data = request.get_json()
-    season_name = str(data.get('season'))
-    rel_cursor = connect_db_rel()
-    rel_cursor.cursor()
+    season = str(data.get('season'))
+    connection = psycopg2.connect(
+        host='db-rel2', database='is', user='is', password='is')
+    cursor = connection.cursor()
     try:
-        rel_cursor.execute(
-            "INSERT INTO season (season) VALUES(%s)", (season_name,))
-        connect_db_rel().commit()
-        return jsonify({'status': 'success', 'your_data': season_name}), 201
+        cursor.execute("INSERT INTO season (season) VALUES(%s)", (season,))
+        connection.commit()
+        return jsonify({'status': 'success', 'your_data': season}), 201
     except:
         pass
+
+    # data = request.get_json()
+    # season = str(data.get('season'))
+    # db_acess_rel_cursor = psycopg2.connect(
+    #    host='db-rel2', database='is', user='is', password='is')
+    # rel_cursor = db_acess_rel_cursor.cursor()
+    # try:
+    #    rel_cursor.execute(
+    #        "INSERT INTO season (season) VALUES(%s)", (season,))
+    #    rel_cursor.commit()  # db_acess_rel_cursor???????
+    #    return jsonify({'status': 'success', 'your_data': season}), 201
+    # except Exception as e:
+    #    return jsonify({'status': 'error', 'message': str(e)})
+    # finally:
+    #    rel_cursor.close()
+    #    db_acess_rel_cursor.close()
 
 
 @app.route('/api/atlethe/', methods=['GET'])

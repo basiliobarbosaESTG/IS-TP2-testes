@@ -27,7 +27,6 @@ def convertXML(file_to_open, file_name):
 
     xmlData.write('<?xml version="1.0"?>' + "\n")
     xmlData.write('<csv_data>' + "\n")
-    # print (data[1:])
 
     def convert_row(row):
         lat, lon = getCoordenates(row[11])
@@ -48,7 +47,7 @@ def convertXML(file_to_open, file_name):
                 <coordenates>
                     <lat>%s</lat>
                     <lon>%s</lon>
-                </coordenates>
+                    </coordenates>
                 <statsBySport>
                     <sport>%s</sport>
                     <event>%s</event>

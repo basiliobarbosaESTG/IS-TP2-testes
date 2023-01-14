@@ -1,2 +1,2 @@
 from .team import Team
-from .event import Event
+from .season import Season
