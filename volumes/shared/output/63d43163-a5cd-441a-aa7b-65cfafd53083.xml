@@ -1,0 +1,2478 @@
+<?xml version="1.0"?>
+<csv_data>
+<atlethe name="A Dijiang">
+            <sex>M</sex>
+            <age>24</age>
+            <height>180</height>
+            <weight>80</weight>
+            <country>
+                <team>China</team>
+                <noc>CHN</noc>
+            </country>
+            <competition>
+                <games>1992 Summer</games>
+                <year>1992</year>
+                <season>Summer</season>
+                <city>Barcelona</city>
+                <coordenates>
+                    <lat>41.3828939</lat>
+                    <lon>2.1774322</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Basketball</sport>
+                    <event>Basketball Men's Basketball</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="A Lamusi">
+            <sex>M</sex>
+            <age>23</age>
+            <height>170</height>
+            <weight>60</weight>
+            <country>
+                <team>China</team>
+                <noc>CHN</noc>
+            </country>
+            <competition>
+                <games>2012 Summer</games>
+                <year>2012</year>
+                <season>Summer</season>
+                <city>London</city>
+                <coordenates>
+                    <lat>51.5073219</lat>
+                    <lon>-0.1276474</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Judo</sport>
+                    <event>Judo Men's Extra-Lightweight</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Gunnar Nielsen Aaby">
+            <sex>M</sex>
+            <age>24</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Denmark</team>
+                <noc>DEN</noc>
+            </country>
+            <competition>
+                <games>1920 Summer</games>
+                <year>1920</year>
+                <season>Summer</season>
+                <city>Antwerpen</city>
+                <coordenates>
+                    <lat>51.2211097</lat>
+                    <lon>4.3997081</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Football</sport>
+                    <event>Football Men's Football</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Edgar Lindenau Aabye">
+            <sex>M</sex>
+            <age>34</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Denmark/Sweden</team>
+                <noc>DEN</noc>
+            </country>
+            <competition>
+                <games>1900 Summer</games>
+                <year>1900</year>
+                <season>Summer</season>
+                <city>Paris</city>
+                <coordenates>
+                    <lat>48.8588897</lat>
+                    <lon>2.3200410217200766</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Tug-Of-War</sport>
+                    <event>Tug-Of-War Men's Tug-Of-War</event>
+                    <medal>Gold</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Christine Jacoba Aaftink">
+            <sex>F</sex>
+            <age>21</age>
+            <height>185</height>
+            <weight>82</weight>
+            <country>
+                <team>Netherlands</team>
+                <noc>NED</noc>
+            </country>
+            <competition>
+                <games>1988 Winter</games>
+                <year>1988</year>
+                <season>Winter</season>
+                <city>Calgary</city>
+                <coordenates>
+                    <lat>51.0460954</lat>
+                    <lon>-114.065465</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Speed Skating</sport>
+                    <event>Speed Skating Women's 500 metres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Christine Jacoba Aaftink">
+            <sex>F</sex>
+            <age>21</age>
+            <height>185</height>
+            <weight>82</weight>
+            <country>
+                <team>Netherlands</team>
+                <noc>NED</noc>
+            </country>
+            <competition>
+                <games>1988 Winter</games>
+                <year>1988</year>
+                <season>Winter</season>
+                <city>Calgary</city>
+                <coordenates>
+                    <lat>51.0460954</lat>
+                    <lon>-114.065465</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Speed Skating</sport>
+                    <event>Speed Skating Women's 1,000 metres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Christine Jacoba Aaftink">
+            <sex>F</sex>
+            <age>25</age>
+            <height>185</height>
+            <weight>82</weight>
+            <country>
+                <team>Netherlands</team>
+                <noc>NED</noc>
+            </country>
+            <competition>
+                <games>1992 Winter</games>
+                <year>1992</year>
+                <season>Winter</season>
+                <city>Albertville</city>
+                <coordenates>
+                    <lat>45.6754622</lat>
+                    <lon>6.3925417</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Speed Skating</sport>
+                    <event>Speed Skating Women's 500 metres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Christine Jacoba Aaftink">
+            <sex>F</sex>
+            <age>25</age>
+            <height>185</height>
+            <weight>82</weight>
+            <country>
+                <team>Netherlands</team>
+                <noc>NED</noc>
+            </country>
+            <competition>
+                <games>1992 Winter</games>
+                <year>1992</year>
+                <season>Winter</season>
+                <city>Albertville</city>
+                <coordenates>
+                    <lat>45.6754622</lat>
+                    <lon>6.3925417</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Speed Skating</sport>
+                    <event>Speed Skating Women's 1,000 metres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Christine Jacoba Aaftink">
+            <sex>F</sex>
+            <age>27</age>
+            <height>185</height>
+            <weight>82</weight>
+            <country>
+                <team>Netherlands</team>
+                <noc>NED</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Speed Skating</sport>
+                    <event>Speed Skating Women's 500 metres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Christine Jacoba Aaftink">
+            <sex>F</sex>
+            <age>27</age>
+            <height>185</height>
+            <weight>82</weight>
+            <country>
+                <team>Netherlands</team>
+                <noc>NED</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Speed Skating</sport>
+                    <event>Speed Skating Women's 1,000 metres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Per Knut Aaland">
+            <sex>M</sex>
+            <age>31</age>
+            <height>188</height>
+            <weight>75</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1992 Winter</games>
+                <year>1992</year>
+                <season>Winter</season>
+                <city>Albertville</city>
+                <coordenates>
+                    <lat>45.6754622</lat>
+                    <lon>6.3925417</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 10 kilometres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Per Knut Aaland">
+            <sex>M</sex>
+            <age>31</age>
+            <height>188</height>
+            <weight>75</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1992 Winter</games>
+                <year>1992</year>
+                <season>Winter</season>
+                <city>Albertville</city>
+                <coordenates>
+                    <lat>45.6754622</lat>
+                    <lon>6.3925417</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 50 kilometres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Per Knut Aaland">
+            <sex>M</sex>
+            <age>31</age>
+            <height>188</height>
+            <weight>75</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1992 Winter</games>
+                <year>1992</year>
+                <season>Winter</season>
+                <city>Albertville</city>
+                <coordenates>
+                    <lat>45.6754622</lat>
+                    <lon>6.3925417</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 10/15 kilometres Pursuit</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Per Knut Aaland">
+            <sex>M</sex>
+            <age>31</age>
+            <height>188</height>
+            <weight>75</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1992 Winter</games>
+                <year>1992</year>
+                <season>Winter</season>
+                <city>Albertville</city>
+                <coordenates>
+                    <lat>45.6754622</lat>
+                    <lon>6.3925417</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 4 x 10 kilometres Relay</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Per Knut Aaland">
+            <sex>M</sex>
+            <age>33</age>
+            <height>188</height>
+            <weight>75</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 10 kilometres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Per Knut Aaland">
+            <sex>M</sex>
+            <age>33</age>
+            <height>188</height>
+            <weight>75</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 30 kilometres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Per Knut Aaland">
+            <sex>M</sex>
+            <age>33</age>
+            <height>188</height>
+            <weight>75</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 10/15 kilometres Pursuit</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Per Knut Aaland">
+            <sex>M</sex>
+            <age>33</age>
+            <height>188</height>
+            <weight>75</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 4 x 10 kilometres Relay</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="John Aalberg">
+            <sex>M</sex>
+            <age>31</age>
+            <height>183</height>
+            <weight>72</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1992 Winter</games>
+                <year>1992</year>
+                <season>Winter</season>
+                <city>Albertville</city>
+                <coordenates>
+                    <lat>45.6754622</lat>
+                    <lon>6.3925417</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 10 kilometres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="John Aalberg">
+            <sex>M</sex>
+            <age>31</age>
+            <height>183</height>
+            <weight>72</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1992 Winter</games>
+                <year>1992</year>
+                <season>Winter</season>
+                <city>Albertville</city>
+                <coordenates>
+                    <lat>45.6754622</lat>
+                    <lon>6.3925417</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 50 kilometres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="John Aalberg">
+            <sex>M</sex>
+            <age>31</age>
+            <height>183</height>
+            <weight>72</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1992 Winter</games>
+                <year>1992</year>
+                <season>Winter</season>
+                <city>Albertville</city>
+                <coordenates>
+                    <lat>45.6754622</lat>
+                    <lon>6.3925417</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 10/15 kilometres Pursuit</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="John Aalberg">
+            <sex>M</sex>
+            <age>31</age>
+            <height>183</height>
+            <weight>72</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1992 Winter</games>
+                <year>1992</year>
+                <season>Winter</season>
+                <city>Albertville</city>
+                <coordenates>
+                    <lat>45.6754622</lat>
+                    <lon>6.3925417</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 4 x 10 kilometres Relay</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="John Aalberg">
+            <sex>M</sex>
+            <age>33</age>
+            <height>183</height>
+            <weight>72</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 10 kilometres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="John Aalberg">
+            <sex>M</sex>
+            <age>33</age>
+            <height>183</height>
+            <weight>72</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 30 kilometres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="John Aalberg">
+            <sex>M</sex>
+            <age>33</age>
+            <height>183</height>
+            <weight>72</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 10/15 kilometres Pursuit</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="John Aalberg">
+            <sex>M</sex>
+            <age>33</age>
+            <height>183</height>
+            <weight>72</weight>
+            <country>
+                <team>United States</team>
+                <noc>USA</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 4 x 10 kilometres Relay</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Cornelia Cor Aalten (-Strannood)">
+            <sex>F</sex>
+            <age>18</age>
+            <height>168</height>
+            <weight>NA</weight>
+            <country>
+                <team>Netherlands</team>
+                <noc>NED</noc>
+            </country>
+            <competition>
+                <games>1932 Summer</games>
+                <year>1932</year>
+                <season>Summer</season>
+                <city>Los Angeles</city>
+                <coordenates>
+                    <lat>34.0536909</lat>
+                    <lon>-118.242766</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Athletics</sport>
+                    <event>Athletics Women's 100 metres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Cornelia Cor Aalten (-Strannood)">
+            <sex>F</sex>
+            <age>18</age>
+            <height>168</height>
+            <weight>NA</weight>
+            <country>
+                <team>Netherlands</team>
+                <noc>NED</noc>
+            </country>
+            <competition>
+                <games>1932 Summer</games>
+                <year>1932</year>
+                <season>Summer</season>
+                <city>Los Angeles</city>
+                <coordenates>
+                    <lat>34.0536909</lat>
+                    <lon>-118.242766</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Athletics</sport>
+                    <event>Athletics Women's 4 x 100 metres Relay</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Antti Sami Aalto">
+            <sex>M</sex>
+            <age>26</age>
+            <height>186</height>
+            <weight>96</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>2002 Winter</games>
+                <year>2002</year>
+                <season>Winter</season>
+                <city>Salt Lake City</city>
+                <coordenates>
+                    <lat>40.7596198</lat>
+                    <lon>-111.886797</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Ice Hockey</sport>
+                    <event>Ice Hockey Men's Ice Hockey</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Einar Ferdinand Einari Aalto">
+            <sex>M</sex>
+            <age>26</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1952 Summer</games>
+                <year>1952</year>
+                <season>Summer</season>
+                <city>Helsinki</city>
+                <coordenates>
+                    <lat>60.1674881</lat>
+                    <lon>24.9427473</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Swimming</sport>
+                    <event>Swimming Men's 400 metres Freestyle</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Jorma Ilmari Aalto">
+            <sex>M</sex>
+            <age>22</age>
+            <height>182</height>
+            <weight>76.5</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1980 Winter</games>
+                <year>1980</year>
+                <season>Winter</season>
+                <city>Lake Placid</city>
+                <coordenates>
+                    <lat>44.279621</lat>
+                    <lon>-73.979874</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Cross Country Skiing</sport>
+                    <event>Cross Country Skiing Men's 30 kilometres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Jyri Tapani Aalto">
+            <sex>M</sex>
+            <age>31</age>
+            <height>172</height>
+            <weight>70</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>2000 Summer</games>
+                <year>2000</year>
+                <season>Summer</season>
+                <city>Sydney</city>
+                <coordenates>
+                    <lat>-33.8698439</lat>
+                    <lon>151.2082848</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Badminton</sport>
+                    <event>Badminton Men's Singles</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Minna Maarit Aalto">
+            <sex>F</sex>
+            <age>30</age>
+            <height>159</height>
+            <weight>55.5</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1996 Summer</games>
+                <year>1996</year>
+                <season>Summer</season>
+                <city>Atlanta</city>
+                <coordenates>
+                    <lat>33.7489924</lat>
+                    <lon>-84.3902644</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Sailing</sport>
+                    <event>Sailing Women's Windsurfer</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Minna Maarit Aalto">
+            <sex>F</sex>
+            <age>34</age>
+            <height>159</height>
+            <weight>55.5</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>2000 Summer</games>
+                <year>2000</year>
+                <season>Summer</season>
+                <city>Sydney</city>
+                <coordenates>
+                    <lat>-33.8698439</lat>
+                    <lon>151.2082848</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Sailing</sport>
+                    <event>Sailing Women's Windsurfer</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Pirjo Hannele Aalto (Mattila-)">
+            <sex>F</sex>
+            <age>32</age>
+            <height>171</height>
+            <weight>65</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Biathlon</sport>
+                    <event>Biathlon Women's 7.5 kilometres Sprint</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Arvo Ossian Aaltonen">
+            <sex>M</sex>
+            <age>22</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1912 Summer</games>
+                <year>1912</year>
+                <season>Summer</season>
+                <city>Stockholm</city>
+                <coordenates>
+                    <lat>59.3251172</lat>
+                    <lon>18.0710935</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Swimming</sport>
+                    <event>Swimming Men's 200 metres Breaststroke</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Arvo Ossian Aaltonen">
+            <sex>M</sex>
+            <age>22</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1912 Summer</games>
+                <year>1912</year>
+                <season>Summer</season>
+                <city>Stockholm</city>
+                <coordenates>
+                    <lat>59.3251172</lat>
+                    <lon>18.0710935</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Swimming</sport>
+                    <event>Swimming Men's 400 metres Breaststroke</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Arvo Ossian Aaltonen">
+            <sex>M</sex>
+            <age>30</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1920 Summer</games>
+                <year>1920</year>
+                <season>Summer</season>
+                <city>Antwerpen</city>
+                <coordenates>
+                    <lat>51.2211097</lat>
+                    <lon>4.3997081</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Swimming</sport>
+                    <event>Swimming Men's 200 metres Breaststroke</event>
+                    <medal>Bronze</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Arvo Ossian Aaltonen">
+            <sex>M</sex>
+            <age>30</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1920 Summer</games>
+                <year>1920</year>
+                <season>Summer</season>
+                <city>Antwerpen</city>
+                <coordenates>
+                    <lat>51.2211097</lat>
+                    <lon>4.3997081</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Swimming</sport>
+                    <event>Swimming Men's 400 metres Breaststroke</event>
+                    <medal>Bronze</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Arvo Ossian Aaltonen">
+            <sex>M</sex>
+            <age>34</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1924 Summer</games>
+                <year>1924</year>
+                <season>Summer</season>
+                <city>Paris</city>
+                <coordenates>
+                    <lat>48.8588897</lat>
+                    <lon>2.3200410217200766</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Swimming</sport>
+                    <event>Swimming Men's 200 metres Breaststroke</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Juhamatti Tapio Aaltonen">
+            <sex>M</sex>
+            <age>28</age>
+            <height>184</height>
+            <weight>85</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>2014 Winter</games>
+                <year>2014</year>
+                <season>Winter</season>
+                <city>Sochi</city>
+                <coordenates>
+                    <lat>43.5854823</lat>
+                    <lon>39.723109</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Ice Hockey</sport>
+                    <event>Ice Hockey Men's Ice Hockey</event>
+                    <medal>Bronze</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>28</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1948 Summer</games>
+                <year>1948</year>
+                <season>Summer</season>
+                <city>London</city>
+                <coordenates>
+                    <lat>51.5073219</lat>
+                    <lon>-0.1276474</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Individual All-Around</event>
+                    <medal>Bronze</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>28</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1948 Summer</games>
+                <year>1948</year>
+                <season>Summer</season>
+                <city>London</city>
+                <coordenates>
+                    <lat>51.5073219</lat>
+                    <lon>-0.1276474</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Team All-Around</event>
+                    <medal>Gold</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>28</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1948 Summer</games>
+                <year>1948</year>
+                <season>Summer</season>
+                <city>London</city>
+                <coordenates>
+                    <lat>51.5073219</lat>
+                    <lon>-0.1276474</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Floor Exercise</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>28</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1948 Summer</games>
+                <year>1948</year>
+                <season>Summer</season>
+                <city>London</city>
+                <coordenates>
+                    <lat>51.5073219</lat>
+                    <lon>-0.1276474</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Horse Vault</event>
+                    <medal>Gold</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>28</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1948 Summer</games>
+                <year>1948</year>
+                <season>Summer</season>
+                <city>London</city>
+                <coordenates>
+                    <lat>51.5073219</lat>
+                    <lon>-0.1276474</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Parallel Bars</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>28</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1948 Summer</games>
+                <year>1948</year>
+                <season>Summer</season>
+                <city>London</city>
+                <coordenates>
+                    <lat>51.5073219</lat>
+                    <lon>-0.1276474</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Horizontal Bar</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>28</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1948 Summer</games>
+                <year>1948</year>
+                <season>Summer</season>
+                <city>London</city>
+                <coordenates>
+                    <lat>51.5073219</lat>
+                    <lon>-0.1276474</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Rings</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>28</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1948 Summer</games>
+                <year>1948</year>
+                <season>Summer</season>
+                <city>London</city>
+                <coordenates>
+                    <lat>51.5073219</lat>
+                    <lon>-0.1276474</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Pommelled Horse</event>
+                    <medal>Gold</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>32</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1952 Summer</games>
+                <year>1952</year>
+                <season>Summer</season>
+                <city>Helsinki</city>
+                <coordenates>
+                    <lat>60.1674881</lat>
+                    <lon>24.9427473</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Individual All-Around</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>32</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1952 Summer</games>
+                <year>1952</year>
+                <season>Summer</season>
+                <city>Helsinki</city>
+                <coordenates>
+                    <lat>60.1674881</lat>
+                    <lon>24.9427473</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Team All-Around</event>
+                    <medal>Bronze</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>32</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1952 Summer</games>
+                <year>1952</year>
+                <season>Summer</season>
+                <city>Helsinki</city>
+                <coordenates>
+                    <lat>60.1674881</lat>
+                    <lon>24.9427473</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Floor Exercise</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>32</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1952 Summer</games>
+                <year>1952</year>
+                <season>Summer</season>
+                <city>Helsinki</city>
+                <coordenates>
+                    <lat>60.1674881</lat>
+                    <lon>24.9427473</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Horse Vault</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>32</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1952 Summer</games>
+                <year>1952</year>
+                <season>Summer</season>
+                <city>Helsinki</city>
+                <coordenates>
+                    <lat>60.1674881</lat>
+                    <lon>24.9427473</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Parallel Bars</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>32</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1952 Summer</games>
+                <year>1952</year>
+                <season>Summer</season>
+                <city>Helsinki</city>
+                <coordenates>
+                    <lat>60.1674881</lat>
+                    <lon>24.9427473</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Horizontal Bar</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>32</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1952 Summer</games>
+                <year>1952</year>
+                <season>Summer</season>
+                <city>Helsinki</city>
+                <coordenates>
+                    <lat>60.1674881</lat>
+                    <lon>24.9427473</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Rings</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Paavo Johannes Aaltonen">
+            <sex>M</sex>
+            <age>32</age>
+            <height>175</height>
+            <weight>64</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1952 Summer</games>
+                <year>1952</year>
+                <season>Summer</season>
+                <city>Helsinki</city>
+                <coordenates>
+                    <lat>60.1674881</lat>
+                    <lon>24.9427473</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Pommelled Horse</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Timo Antero Aaltonen">
+            <sex>M</sex>
+            <age>31</age>
+            <height>189</height>
+            <weight>130</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>2000 Summer</games>
+                <year>2000</year>
+                <season>Summer</season>
+                <city>Sydney</city>
+                <coordenates>
+                    <lat>-33.8698439</lat>
+                    <lon>151.2082848</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Athletics</sport>
+                    <event>Athletics Men's Shot Put</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Win Valdemar Aaltonen">
+            <sex>M</sex>
+            <age>54</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1948 Summer</games>
+                <year>1948</year>
+                <season>Summer</season>
+                <city>London</city>
+                <coordenates>
+                    <lat>51.5073219</lat>
+                    <lon>-0.1276474</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Art Competitions</sport>
+                    <event>Art Competitions Mixed Sculpturing, Unknown Event</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>20</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1992 Winter</games>
+                <year>1992</year>
+                <season>Winter</season>
+                <city>Albertville</city>
+                <coordenates>
+                    <lat>45.6754622</lat>
+                    <lon>6.3925417</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Downhill</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>20</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1992 Winter</games>
+                <year>1992</year>
+                <season>Winter</season>
+                <city>Albertville</city>
+                <coordenates>
+                    <lat>45.6754622</lat>
+                    <lon>6.3925417</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Super G</event>
+                    <medal>Gold</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>20</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1992 Winter</games>
+                <year>1992</year>
+                <season>Winter</season>
+                <city>Albertville</city>
+                <coordenates>
+                    <lat>45.6754622</lat>
+                    <lon>6.3925417</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Giant Slalom</event>
+                    <medal>Bronze</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>20</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1992 Winter</games>
+                <year>1992</year>
+                <season>Winter</season>
+                <city>Albertville</city>
+                <coordenates>
+                    <lat>45.6754622</lat>
+                    <lon>6.3925417</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Slalom</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>22</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Downhill</event>
+                    <medal>Silver</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>22</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Super G</event>
+                    <medal>Bronze</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>22</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Giant Slalom</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>22</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Slalom</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>22</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1994 Winter</games>
+                <year>1994</year>
+                <season>Winter</season>
+                <city>Lillehammer</city>
+                <coordenates>
+                    <lat>61.1145451</lat>
+                    <lon>10.4670073</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Combined</event>
+                    <medal>Silver</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>26</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1998 Winter</games>
+                <year>1998</year>
+                <season>Winter</season>
+                <city>Nagano</city>
+                <coordenates>
+                    <lat>36.6485851</lat>
+                    <lon>138.1947664</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Downhill</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>26</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1998 Winter</games>
+                <year>1998</year>
+                <season>Winter</season>
+                <city>Nagano</city>
+                <coordenates>
+                    <lat>36.6485851</lat>
+                    <lon>138.1947664</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Super G</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>26</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1998 Winter</games>
+                <year>1998</year>
+                <season>Winter</season>
+                <city>Nagano</city>
+                <coordenates>
+                    <lat>36.6485851</lat>
+                    <lon>138.1947664</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Giant Slalom</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>26</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1998 Winter</games>
+                <year>1998</year>
+                <season>Winter</season>
+                <city>Nagano</city>
+                <coordenates>
+                    <lat>36.6485851</lat>
+                    <lon>138.1947664</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Combined</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>30</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>2002 Winter</games>
+                <year>2002</year>
+                <season>Winter</season>
+                <city>Salt Lake City</city>
+                <coordenates>
+                    <lat>40.7596198</lat>
+                    <lon>-111.886797</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Downhill</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>30</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>2002 Winter</games>
+                <year>2002</year>
+                <season>Winter</season>
+                <city>Salt Lake City</city>
+                <coordenates>
+                    <lat>40.7596198</lat>
+                    <lon>-111.886797</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Super G</event>
+                    <medal>Gold</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>30</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>2002 Winter</games>
+                <year>2002</year>
+                <season>Winter</season>
+                <city>Salt Lake City</city>
+                <coordenates>
+                    <lat>40.7596198</lat>
+                    <lon>-111.886797</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Giant Slalom</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>30</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>2002 Winter</games>
+                <year>2002</year>
+                <season>Winter</season>
+                <city>Salt Lake City</city>
+                <coordenates>
+                    <lat>40.7596198</lat>
+                    <lon>-111.886797</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Slalom</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>30</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>2002 Winter</games>
+                <year>2002</year>
+                <season>Winter</season>
+                <city>Salt Lake City</city>
+                <coordenates>
+                    <lat>40.7596198</lat>
+                    <lon>-111.886797</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Combined</event>
+                    <medal>Gold</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>34</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>2006 Winter</games>
+                <year>2006</year>
+                <season>Winter</season>
+                <city>Torino</city>
+                <coordenates>
+                    <lat>45.0677551</lat>
+                    <lon>7.6824892</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Downhill</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Kjetil Andr Aamodt">
+            <sex>M</sex>
+            <age>34</age>
+            <height>176</height>
+            <weight>85</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>2006 Winter</games>
+                <year>2006</year>
+                <season>Winter</season>
+                <city>Torino</city>
+                <coordenates>
+                    <lat>45.0677551</lat>
+                    <lon>7.6824892</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Alpine Skiing</sport>
+                    <event>Alpine Skiing Men's Super G</event>
+                    <medal>Gold</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Ragnhild Margrethe Aamodt">
+            <sex>F</sex>
+            <age>27</age>
+            <height>163</height>
+            <weight>NA</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>2008 Summer</games>
+                <year>2008</year>
+                <season>Summer</season>
+                <city>Beijing</city>
+                <coordenates>
+                    <lat>39.906217</lat>
+                    <lon>116.3912757</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Handball</sport>
+                    <event>Handball Women's Handball</event>
+                    <medal>Gold</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Andreea Aanei">
+            <sex>F</sex>
+            <age>22</age>
+            <height>170</height>
+            <weight>125</weight>
+            <country>
+                <team>Romania</team>
+                <noc>ROU</noc>
+            </country>
+            <competition>
+                <games>2016 Summer</games>
+                <year>2016</year>
+                <season>Summer</season>
+                <city>Rio de Janeiro</city>
+                <coordenates>
+                    <lat>-22.9110137</lat>
+                    <lon>-43.2093727</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Weightlifting</sport>
+                    <event>Weightlifting Women's Super-Heavyweight</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Fritz Aanes">
+            <sex>M</sex>
+            <age>22</age>
+            <height>187</height>
+            <weight>89</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>2000 Summer</games>
+                <year>2000</year>
+                <season>Summer</season>
+                <city>Sydney</city>
+                <coordenates>
+                    <lat>-33.8698439</lat>
+                    <lon>151.2082848</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Wrestling</sport>
+                    <event>Wrestling Men's Light-Heavyweight, Greco-Roman</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Fritz Aanes">
+            <sex>M</sex>
+            <age>26</age>
+            <height>187</height>
+            <weight>89</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>2004 Summer</games>
+                <year>2004</year>
+                <season>Summer</season>
+                <city>Athina</city>
+                <coordenates>
+                    <lat>37.9839412</lat>
+                    <lon>23.7283052</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Wrestling</sport>
+                    <event>Wrestling Men's Light-Heavyweight, Greco-Roman</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Nils Egil Aaness">
+            <sex>M</sex>
+            <age>24</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1960 Winter</games>
+                <year>1960</year>
+                <season>Winter</season>
+                <city>Squaw Valley</city>
+                <coordenates>
+                    <lat>36.7402261</lat>
+                    <lon>-119.246785</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Speed Skating</sport>
+                    <event>Speed Skating Men's 500 metres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Nils Egil Aaness">
+            <sex>M</sex>
+            <age>24</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1960 Winter</games>
+                <year>1960</year>
+                <season>Winter</season>
+                <city>Squaw Valley</city>
+                <coordenates>
+                    <lat>36.7402261</lat>
+                    <lon>-119.246785</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Speed Skating</sport>
+                    <event>Speed Skating Men's 1,500 metres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Nils Egil Aaness">
+            <sex>M</sex>
+            <age>27</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1964 Winter</games>
+                <year>1964</year>
+                <season>Winter</season>
+                <city>Innsbruck</city>
+                <coordenates>
+                    <lat>47.2654296</lat>
+                    <lon>11.3927685</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Speed Skating</sport>
+                    <event>Speed Skating Men's 1,500 metres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Alf Lied Aanning">
+            <sex>M</sex>
+            <age>24</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1920 Summer</games>
+                <year>1920</year>
+                <season>Summer</season>
+                <city>Antwerpen</city>
+                <coordenates>
+                    <lat>51.2211097</lat>
+                    <lon>4.3997081</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Gymnastics</sport>
+                    <event>Gymnastics Men's Team All-Around, Free System</event>
+                    <medal>Silver</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Agnes Erika Aanonsen (-Eyde)">
+            <sex>F</sex>
+            <age>17</age>
+            <height>169</height>
+            <weight>65</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1984 Winter</games>
+                <year>1984</year>
+                <season>Winter</season>
+                <city>Sarajevo</city>
+                <coordenates>
+                    <lat>43.8519774</lat>
+                    <lon>18.3866868</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Luge</sport>
+                    <event>Luge Women's Singles</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Johan Aantjes">
+            <sex>M</sex>
+            <age>26</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Netherlands</team>
+                <noc>NED</noc>
+            </country>
+            <competition>
+                <games>1984 Summer</games>
+                <year>1984</year>
+                <season>Summer</season>
+                <city>Los Angeles</city>
+                <coordenates>
+                    <lat>34.0536909</lat>
+                    <lon>-118.242766</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Water Polo</sport>
+                    <event>Water Polo Men's Water Polo</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Jan-Erik Aarberg">
+            <sex>M</sex>
+            <age>43</age>
+            <height>170</height>
+            <weight>77</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1968 Summer</games>
+                <year>1968</year>
+                <season>Summer</season>
+                <city>Mexico City</city>
+                <coordenates>
+                    <lat>19.4326296</lat>
+                    <lon>-99.1331785</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Sailing</sport>
+                    <event>Sailing Mixed Three Person Keelboat</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Jan-Erik Aarberg">
+            <sex>M</sex>
+            <age>47</age>
+            <height>170</height>
+            <weight>77</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1972 Summer</games>
+                <year>1972</year>
+                <season>Summer</season>
+                <city>Munich</city>
+                <coordenates>
+                    <lat>48.1371079</lat>
+                    <lon>11.5753822</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Sailing</sport>
+                    <event>Sailing Mixed Three Person Keelboat</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Willemien Aardenburg">
+            <sex>F</sex>
+            <age>22</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Netherlands</team>
+                <noc>NED</noc>
+            </country>
+            <competition>
+                <games>1988 Summer</games>
+                <year>1988</year>
+                <season>Summer</season>
+                <city>Seoul</city>
+                <coordenates>
+                    <lat>37.5666791</lat>
+                    <lon>126.9782914</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Hockey</sport>
+                    <event>Hockey Women's Hockey</event>
+                    <medal>Bronze</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Pepijn Aardewijn">
+            <sex>M</sex>
+            <age>26</age>
+            <height>189</height>
+            <weight>72</weight>
+            <country>
+                <team>Netherlands</team>
+                <noc>NED</noc>
+            </country>
+            <competition>
+                <games>1996 Summer</games>
+                <year>1996</year>
+                <season>Summer</season>
+                <city>Atlanta</city>
+                <coordenates>
+                    <lat>33.7489924</lat>
+                    <lon>-84.3902644</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Rowing</sport>
+                    <event>Rowing Men's Lightweight Double Sculls</event>
+                    <medal>Silver</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Pepijn Aardewijn">
+            <sex>M</sex>
+            <age>30</age>
+            <height>189</height>
+            <weight>72</weight>
+            <country>
+                <team>Netherlands</team>
+                <noc>NED</noc>
+            </country>
+            <competition>
+                <games>2000 Summer</games>
+                <year>2000</year>
+                <season>Summer</season>
+                <city>Sydney</city>
+                <coordenates>
+                    <lat>-33.8698439</lat>
+                    <lon>151.2082848</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Rowing</sport>
+                    <event>Rowing Men's Lightweight Double Sculls</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Evald rma (rman-)">
+            <sex>M</sex>
+            <age>24</age>
+            <height>174</height>
+            <weight>70</weight>
+            <country>
+                <team>Estonia</team>
+                <noc>EST</noc>
+            </country>
+            <competition>
+                <games>1936 Summer</games>
+                <year>1936</year>
+                <season>Summer</season>
+                <city>Berlin</city>
+                <coordenates>
+                    <lat>52.5170365</lat>
+                    <lon>13.3888599</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Athletics</sport>
+                    <event>Athletics Men's Pole Vault</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Olav Augunson Aarnes">
+            <sex>M</sex>
+            <age>23</age>
+            <height>NA</height>
+            <weight>NA</weight>
+            <country>
+                <team>Norway</team>
+                <noc>NOR</noc>
+            </country>
+            <competition>
+                <games>1912 Summer</games>
+                <year>1912</year>
+                <season>Summer</season>
+                <city>Stockholm</city>
+                <coordenates>
+                    <lat>59.3251172</lat>
+                    <lon>18.0710935</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Athletics</sport>
+                    <event>Athletics Men's High Jump</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Mika Lauri Aarnikka">
+            <sex>M</sex>
+            <age>24</age>
+            <height>187</height>
+            <weight>76</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1992 Summer</games>
+                <year>1992</year>
+                <season>Summer</season>
+                <city>Barcelona</city>
+                <coordenates>
+                    <lat>41.3828939</lat>
+                    <lon>2.1774322</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Sailing</sport>
+                    <event>Sailing Men's Two Person Dinghy</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Mika Lauri Aarnikka">
+            <sex>M</sex>
+            <age>28</age>
+            <height>187</height>
+            <weight>76</weight>
+            <country>
+                <team>Finland</team>
+                <noc>FIN</noc>
+            </country>
+            <competition>
+                <games>1996 Summer</games>
+                <year>1996</year>
+                <season>Summer</season>
+                <city>Atlanta</city>
+                <coordenates>
+                    <lat>33.7489924</lat>
+                    <lon>-84.3902644</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Sailing</sport>
+                    <event>Sailing Men's Two Person Dinghy</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+<atlethe name="Jamale (Djamel-) Aarrass (Ahrass-)">
+            <sex>M</sex>
+            <age>30</age>
+            <height>187</height>
+            <weight>76</weight>
+            <country>
+                <team>France</team>
+                <noc>FRA</noc>
+            </country>
+            <competition>
+                <games>2012 Summer</games>
+                <year>2012</year>
+                <season>Summer</season>
+                <city>London</city>
+                <coordenates>
+                    <lat>51.5073219</lat>
+                    <lon>-0.1276474</lon>
+                </coordenates>
+                <statsBySport>
+                    <sport>Athletics</sport>
+                    <event>Athletics Men's 1,500 metres</event>
+                    <medal>NA</medal>
+                </statsBySport>
+            </competition>
+        </atlethe>
+</csv_data>

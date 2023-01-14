@@ -55,22 +55,23 @@ if __name__ == "__main__":
         # !TODO: 1- Execute a SELECT query to check for any changes on the table
         resp = requests.get(
             url="http://api-entities2:8080/api/event", params={})
-        # supostamente vai buscar os dados da tag season e o respetivo id
-        events = {x.get("event"): x.get("id")
-                  for x in resp.json()}
+        # supostamente vai buscar os dados da tag season e o respetivo id    : x.get("id")
+        events = {x.get("event") for x in resp.json()}
         query = """(with atlethes as (select unnest(xpath('//atlethe',xml)) as atlethes from imported_documents)
                             select DISTINCT(xpath('//atlethe/competition/statsBySport/event/text()',atlethes))[1]::text as Event
                             FROM atlethes
                             GROUP BY Event)"""
         xml_cursor.execute(query)
         for row in xml_cursor:
-            if row[0] not in events.keys():
-                x = row[0]
+            # if row[1] not in events.keys():
+            if row[1] not in events.keys():
+                x = row[1]
                 resp = requests.post(
-                    url="http://api-entities2:8080/api/events/create", json={"event": x})
+                    url="http://api-entities2:8080/api/event/create", json={"event": x})
                 resp = requests.get(
-                    url="http://api-entities2:8080/api/events", params={})
-                events = {x.get("event"): x.get("id") for x in resp.json()}
+                    url="http://api-entities2:8080/api/event", params={})
+                events = {x.get("event") for x in resp.json()}
+                #: x.get("id")
 
         # respRest = requests.get(
         #    url="http://api-entities:8080/api/atlethes", params={})
