@@ -2,7 +2,7 @@ import sys
 import psycopg2
 
 from flask import Flask, jsonify, request
-from entities.event import Event
+from entities.season import Season
 from entities.atlethe import Atlethe
 from entities import Team
 
@@ -10,11 +10,9 @@ PORT = int(sys.argv[1]) if len(sys.argv) >= 2 else 9000
 
 # set of all teams
 # !TODO: replace by database access
-# events = [
-# ]
-events = [
+seasons = [
     {
-        "event": "basketball"
+        "season": "Winter"
     }
 ]
 
@@ -29,25 +27,25 @@ app = Flask(__name__)
 app.config["DEBUG"] = True
 
 
-@app.route('/api/event/', methods=['GET'])
-def get_events():
+@app.route('/api/season/', methods=['GET'])
+def get_seasons():
     # rel_cursor = connect_db_rel()
-    # rel_cursor.execute("SELECT id, event FROM event")
-    # return [Event(row[1]).to_json() for row in rel_cursor]
-    return events
+    # rel_cursor.execute("SELECT id, season FROM season")
+    # return [Season(row[1]).to_json() for row in rel_cursor]
+    return seasons
 
 
-@app.route('/api/event/create', methods=['POST'])
-def post_events():
+@app.route('/api/season/create', methods=['POST'])
+def post_seasons():
     data = request.get_json()
-    event_name = str(data.get('event'))
+    season_name = str(data.get('season'))
     rel_cursor = connect_db_rel()
     rel_cursor.cursor()
     try:
         rel_cursor.execute(
-            "INSERT INTO event (event) VALUES(%s)", (event_name,))
+            "INSERT INTO season (season) VALUES(%s)", (season_name,))
         connect_db_rel().commit()
-        return jsonify({'status': 'success', 'your_data': event_name}), 201
+        return jsonify({'status': 'success', 'your_data': season_name}), 201
     except:
         pass
 
