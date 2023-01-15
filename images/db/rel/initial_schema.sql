@@ -73,5 +73,5 @@ CREATE TABLE public.atlethe (
 
 ALTER TABLE atlethe
     ADD CONSTRAINT atlethe_season_id_fk
-        FOREIGN KEY (season_id) REFERENCES event
+        FOREIGN KEY (season_id) REFERENCES season
             ON DELETE SET NULL;
