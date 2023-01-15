@@ -39,7 +39,7 @@ class Atlethe:
             "year": self.year,
             "season": self.season,
             "city": self.city,
-            "lan": self.lat,
+            "lat": self.lat,
             "lon": self.lon,
             "sport": self.sport,
             "event": self.event,

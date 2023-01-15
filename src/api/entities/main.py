@@ -27,7 +27,6 @@ def get_seasons():
     rel_cursor = connect_db_rel()
     rel_cursor.execute("SELECT id, season FROM season")
     return [Season(row[1]).to_json() for row in rel_cursor]
-    # return seasons
 
 
 @app.route('/api/season/create', methods=['POST'])
@@ -55,19 +54,15 @@ def get_atlethes():
 
 @app.route('/api/atlethe/create', methods=['POST'])
 def post_atlethes():
-    atlethe = request.get_json()
-    rel_cursor = connect_db_rel()
-    rel_cursor.cursor()
-    # meter point direito, tirar plicas
-    lat = float(atlethe.get("lat", None).replace("'", ""))
-    lon = float(atlethe.get("lon", None).replace("'", ""))
-    try:
-        rel_cursor.execute("""INSERT INTO atlethe(name, sex, age, height, weight, team, noc, games, year, season, city, lat, lon, sport, event, medal, geom) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, ST_GeomFromText('POINT(%s %s)',4326))""",
-                           (atlethe.get("name"), atlethe.get("sex"), atlethe.get("age"), atlethe.get("height"), atlethe.get("weight"), atlethe.get("team"), atlethe.get("noc"), atlethe.get("games"), atlethe.get("year"), atlethe.get("season"), atlethe.get("city"), atlethe.get("lat"), atlethe.get("lon"), atlethe.get("sport"), atlethe.get("event"), atlethe.get("medal"), lat, lon))
-        connect_db_rel().commit()
-        return jsonify(message='Athlete created successfully'), 201
-    except Exception as e:
-        return jsonify(error=str(e)), 400
+    data = request.get_json()
+    connection = psycopg2.connect(
+        host='db-rel2', database='is', user='is', password='is')
+    cursor = connection.cursor()
+
+    query = f"INSERT INTO atlethe(name, sex, age, height, weight, team, noc, games, year, season, city, lat, lon, sport, event, medal, geom) VALUES ('{data['name']}', '{data['sex']}', '{data['age']}', '{data['height']}', '{data['weight']}', '{data['team']}', '{data['noc']}', '{data['games']}', '{data['year']}', '{data['season']}', '{data['city']}', '{data['lat']}', '{data['lon']}', '{data['sport']}', '{data['event']}', '{data['medal']}', ST_GeomFromText('POINT({data['lon']}  {data['lat']})', 4326))"
+    cursor.execute(query)
+    connection.commit()
+    return data
 
 
 # @app.route('/api/teams/', methods=['GET'])
@@ -79,6 +74,5 @@ def post_atlethes():
 #    team = Team(name=data['name'])
 #    teams.append(team)
 #    return jsonify(team.__dict__), 201
-
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=PORT)
