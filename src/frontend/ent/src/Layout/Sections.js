@@ -1,24 +1,27 @@
-import Players from "../Tables/Players";
+//import Players from "../Tables/Players";
+import Season from "../Tables/Season"
+import Atlethe from "../Tables/Atlethe";
 
 const Sections = [
 
     {
-        id: "players",
-        label: "Players",
-        content: <Players/>
+        id: "atlethes",
+        label: "Atlethes",
+        //content: <h1>Atlethes </h1>
+        content: < Atlethe />
     },
 
     {
-        id: "teams",
-        label: "Teams",
-        content: <h1>Teams - Work in progresss</h1>
+        id: "seasons",
+        label: "Seasons",
+        content: < Season />
     },
 
-    {
-        id: "countries",
-        label: "Countries",
-        content: <h1>Countries - Work in progress</h1>
-    }
+    // {
+    //     id: "countries",
+    //     label: "Countries",
+    //     content: <h1>Countries - Work in progress</h1>
+    // }
 
 ];
 

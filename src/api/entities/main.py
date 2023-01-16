@@ -2,6 +2,7 @@ import sys
 import psycopg2
 
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 from entities.season import Season
 from entities.atlethe import Atlethe
 from entities import Team
@@ -20,6 +21,7 @@ def connect_db_rel():
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
+CORS(app)
 
 
 @app.route('/api/season/', methods=['GET'])
