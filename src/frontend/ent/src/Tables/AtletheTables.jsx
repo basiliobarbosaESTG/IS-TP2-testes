@@ -19,51 +19,51 @@ const AtletheTables = () => {
 
     const columns = [
         {
-            name: "Atlethe Name",
+            name: <h4>Atlethe Name</h4>,
             selector: row => row.name
         },
         {
-            name: "Age",
+            name: <h4>Age</h4>,
             selector: row => row.age
         },
         {
-            name: "Height",
-            selector: row => row.heigth
+            name: <h4>Height</h4>,
+            selector: row => row.height
         },
         {
-            name: "Weight",
-            selector: row => row.weigth
+            name: <h4>Weight</h4>,
+            selector: row => row.weight
         },
         {
-            name: "Team",
+            name: <h4>Team</h4>,
             selector: row => row.team
         },
         {
-            name: "NOC",
+            name: <h4>NOC</h4>,
             selector: row => row.noc
         },
         {
-            name: "Games",
+            name: <h4>Games</h4>,
             selector: row => row.games
         },
         {
-            name: "Year",
+            name: <h4>Year</h4>,
             selector: row => row.year
         },
         {
-            name: "City",
+            name: <h4>City</h4>,
             selector: row => row.city
         },
         {
-            name: "Sport",
+            name: <h4>Sport</h4>,
             selector: row => row.sport
         },
         {
-            name: "Event",
+            name: <h4>Event</h4>,
             selector: row => row.event
         },
         {
-            name: "Medal",
+            name: <h4>Medal</h4>,
             selector: row => row.medal
         },
     ];
@@ -92,7 +92,7 @@ const AtletheTables = () => {
         subHeaderComponent={
             <input
                 type='text'
-                placeholder='Pesquisa aqui'
+                placeholder='Pesquisa (name/team/city)'
                 className='w-25 form-control'
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}

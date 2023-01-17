@@ -5,7 +5,7 @@ function Atlethe() {
     return (
         <>
             <div className="d-flex flex-column align-itens-center">
-                <h1>React Datatable - Dados API Atletas</h1>
+                <h1>Dados API Athletes</h1>
             </div>
             <AtletheTables />
         </>
