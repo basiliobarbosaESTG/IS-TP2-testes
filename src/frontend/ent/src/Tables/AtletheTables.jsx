@@ -78,7 +78,7 @@ const AtletheTables = () => {
         });
 
         setFilterAtlethe(result);
-    }, [search]);
+    }, [search]); //[atlethe, search]
 
     return <DataTable
         title="Lista de Atletas"
