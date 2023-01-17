@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
-import {LayerGroup, useMap} from 'react-leaflet';
-import {ObjectMarker} from "./ObjectMarker";
+import React, { useEffect, useState } from 'react';
+import { LayerGroup, useMap } from 'react-leaflet';
+import { ObjectMarker } from "./ObjectMarker";
 
 const DEMO_DATA = [
     {
@@ -14,7 +14,7 @@ const DEMO_DATA = [
             name: "Ronaldo",
             country: "Portugal",
             position: "Striker",
-            imgUrl: "https://cdn-icons-png.flaticon.com/512/805/805401.png",
+            imgUrl: "https://cdn-icons-png.flaticon.com/512/6534/6534578.png",
             number: 7
         }
     },
@@ -30,7 +30,7 @@ const DEMO_DATA = [
             name: "Messi",
             country: "Argentina",
             position: "Forward",
-            imgUrl: "https://cdn-icons-png.flaticon.com/512/805/805404.png",
+            imgUrl: "https://cdn-icons-png.flaticon.com/512/6534/6534578.png",
             number: 10
         }
     },
@@ -81,7 +81,7 @@ function ObjectMarkersGroup() {
     return (
         <LayerGroup>
             {
-                geom.map(geoJSON => <ObjectMarker key={geoJSON.properties.id} geoJSON={geoJSON}/>)
+                geom.map(geoJSON => <ObjectMarker key={geoJSON.properties.id} geoJSON={geoJSON} />)
             }
         </LayerGroup>
     );

@@ -1,4 +1,5 @@
 import sys
+import psycopg2
 
 from flask import Flask, request
 
@@ -8,27 +9,21 @@ app = Flask(__name__)
 app.config["DEBUG"] = True
 
 
-@app.route('/api/markers', methods=['GET'])
-def get_markers():
-    args = request.args
+@app.route('/api/markerAtlethe/', methods=['GET'])
+def get_markers_atlethes():
 
-    return [
-        {
-            "type": "feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [41.69462, -8.84679]
-            },
-            "properties": {
-                "id": "7674fe6a-6c8d-47b3-9a1f-18637771e23b",
-                "name": "Ronaldo",
-                "country": "Portugal",
-                "position": "Striker",
-                "imgUrl": "https://cdn-icons-png.flaticon.com/512/805/805401.png",
-                "number": 7
-            }
-        }
-    ]
+    connection = psycopg2.connect(
+        host='db-rel2', database='is', user='is', password='is')
+    cursor = connection.cursor()
+
+    query = f"SELECT (SELECT jsonb_build_object('type', 'Feature','geometry', ST_AsGeoJSON(atlethe.geom)::jsonb,'properties', to_jsonb( t.* )  - 'geom') AS json FROM (VALUES (atlethe.id, atlethe.name, atlethe.city, 'POINT(1 1)'::geometry)) AS t(id, name, city, geom)) FROM atlethe;"
+
+    cursor.execute(query)
+    connection.commit()
+    data = cursor.fetchall()
+
+    connection.close()
+    return data
 
 
 if __name__ == '__main__':
